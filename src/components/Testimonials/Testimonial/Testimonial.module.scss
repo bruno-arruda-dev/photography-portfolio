@@ -1,0 +1,87 @@
+@import '../../../styles/Global.scss';
+
+.carrouselCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+
+    .dataContainer {
+        text-align: center;
+
+        h4 {
+            color: $text-main;
+            font-weight: bold;
+            font-family: 'Dancing Script', cursive;
+            font-size: 3rem;
+        }
+
+        .textContent {
+            padding: 0 25px;
+            position: relative;
+
+            .openQuote,
+            .closeQuote {
+                position: absolute;
+                display: block;
+                width: 20px;
+                height: 20px;
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .openQuote {
+                left: 0;
+                top: -10px;
+                background-image: url('/images/openQuote.png');
+            }
+
+            .closeQuote {
+                right: 0;
+                bottom: 10px;
+                background-image: url('/images/closeQuote.png');
+            }
+
+            p {
+                color: $text-main;
+                margin: 50px 0;
+
+            }
+
+        }
+
+        .stars {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 20px;
+
+            .star {
+                margin: 5px;
+                width: 20px;
+                height: 20px;
+                background-image: url('/images/star.png');
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .carrouselCard {
+
+        .dataContainer {
+
+            h4 {
+                font-size: 2rem;
+            }
+        }
+
+    }
+}

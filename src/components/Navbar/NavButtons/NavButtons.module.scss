@@ -1,0 +1,35 @@
+@import '../../../styles/Global.scss';
+
+.navButtons {
+    
+    .navButtonsItems {
+        margin: auto;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        
+        .navButtonsItemsLink {
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+            text-shadow: 0px 0px 30px $bg-main;
+            
+            &:hover {
+                font-weight: bold;
+                text-shadow: 0px 0px 1px $detail-color;
+            }
+            
+            .navButton {
+                text-decoration: none;
+                color: $text-main;
+            }
+        }
+        
+        .navButtonsItemsMid {
+            margin: 0 20px;
+        }
+        
+    }
+}

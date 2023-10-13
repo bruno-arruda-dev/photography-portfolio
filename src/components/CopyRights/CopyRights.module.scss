@@ -1,0 +1,16 @@
+@import '../../styles/Global.scss';
+
+.copyrights {
+    color: $text-main;
+    font-size: .8rem;
+    text-align: center;
+
+    a {
+        color: $text-main;
+        text-decoration: none;
+
+        &:hover {
+            font-weight: bold;
+        }
+    }
+}

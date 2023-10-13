@@ -1,0 +1,44 @@
+@import '../../../../styles/Global.scss';
+
+.navOffers {
+    position: relative;
+    
+    .navOffersItems {
+        height: 0;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        
+        .navOffersItem {
+            list-style: none;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            transition: all .2s ease-in-out;
+            font-weight: normal;
+            
+            .navOffersLink {
+                color: $text-main;
+                text-decoration: none;
+                text-shadow: none;
+            }
+
+            &:hover {
+                transform: translateX(8px);
+            }
+        }
+        
+    }
+    
+    &:hover .navOffersItems {
+        padding: 1rem;
+        border-radius: $radius-main;
+        height: fit-content;
+        background-color: $bg-main-transparent;
+        width: fit-content;
+    }
+}

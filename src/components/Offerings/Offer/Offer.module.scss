@@ -1,0 +1,74 @@
+@import '../../../styles/Global.scss';
+
+.offer {
+    border: 10  px solid $detail-color;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    width: 100%;
+    height: calc(100vh);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    // background-attachment: fixed;
+    position: relative;
+
+    .dataContainer {
+        border: 4px solid $detail-color;
+        width: 200px;
+        height: 300px;
+        overflow: hidden;
+        position: absolute;
+
+        h4 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2rem;
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        p {
+            font-size: .8rem;
+            margin: 10px;
+        }
+    }
+
+    // POSITIONS
+
+    .left {
+        left: 20px;
+    }
+
+    .center {
+        left: 50%;
+    }
+
+    .right {
+        right: 20px;
+    }
+
+    .top {
+        top: calc(20px + $navbar-height);
+        opacity: 0;
+        transform: translateY(100%)
+    }
+    
+    .bottom {
+        bottom: 20px;
+        opacity: 0;
+        transform: translateY(-100%)
+    }
+
+    // COLORS
+    .blue {
+        background-color: $blue-card;
+    }
+    .green {
+        background-color: $green-card;
+    }
+    .rose {
+        background-color: $rose-card;
+    }
+    .yellow {
+        background-color: $yellow-card;
+    }
+}

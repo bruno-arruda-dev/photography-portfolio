@@ -1,0 +1,98 @@
+@import '../../styles//Global.scss';
+
+.socialMediaButtons {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    transition: all .5s ease-in-out;
+
+    &:hover {
+        font-weight: bold;
+    }
+
+    .buttonLogo {
+        width: 25px;
+        height: 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    p {
+        margin: auto 0 auto 5px;
+    }
+
+    
+    // VARIANTS
+
+
+    //      COLORED
+    .whatsapp_colored {
+        background-image: url('/images/whatsapp.png');
+    }
+    
+    .instagram_colored {
+        background-image: url('/images/instagram.png');
+    }
+    
+    .linkedin_colored {
+        background-image: url('/images/linkedin.png');
+    }
+    
+    .email_colored {
+        background-image: url('/images/gmail.png');
+    }
+    
+    .behance_colored {
+        background-image: url('/images/behance.png');
+    }
+
+    .pinterest_colored {
+        background-image: url('/images/pinterest.png');
+    }
+    
+    .facebook_colored {
+        background-image: url('/images/facebook.png');
+    }
+    
+    .twitter_colored {
+        background-image: url('/images/twitter.png');
+    }
+
+
+    //      DISCREET
+    .whatsapp_discreet {
+        background-image: url('/images/whatsapp_discreet.png');
+    }
+    
+    .instagram_discreet {
+        background-image: url('/images/instagram_discreet.png');
+    }
+    
+    .linkedin_discreet {
+        background-image: url('/images/linkedin_discreet.png');
+    }
+    
+    .email_discreet {
+        background-image: url('/images/email_discreet.png');
+    }
+    
+    .behance_discreet {
+        background-image: url('/images/behance_discreet.png');
+    }
+
+    .pinterest_discreet {
+        background-image: url('/images/pinterest_discreet.png');
+    }
+    
+    .facebook_discreet {
+        background-image: url('/images/facebook_discreet.png');
+    }
+    
+    .twitter_discreet {
+        background-image: url('/images/twitter_discreet.png');
+    }
+
+}

@@ -1,0 +1,146 @@
+@import '../../styles//Global.scss';
+
+.navbarMobile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 97;
+    top: 0;
+    right: 0;
+    position: fixed;
+    height: $navbar-height;
+    width: 100%;
+    padding: 0 20px;
+    transition: all 0.5s ease-in-out .2s;
+    background-color: $bg-main-transparent;
+    box-shadow: 0 10px 50px $bg-main;
+    
+    input {
+        display: none;
+    }
+    
+    .mobileNav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        overflow: hidden;
+        backdrop-filter: blur(10px);
+        background-color: $bg-main-transparent;
+        transition: all 0.5s ease-in-out .1s;
+        
+        .mobileNavItems {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            list-style: none;
+            text-decoration: none;
+            text-align: center;
+            margin-bottom: 30px;
+            
+            .mobileNavItem {
+                margin: 2px 0;
+                padding: 10px;
+                width: 100%;
+                
+                .mobileNavItemLink {
+                    color: $text-main;
+                    text-decoration: none;
+
+                    &:hover {
+                        font-weight: bold;
+                    }
+                }
+
+                &:hover {
+                    background-color: $bg-main-transparent;
+        
+                }
+            }
+        }
+    }
+
+    .hidden {
+        width: 0;
+    }
+    
+    .exposed {
+        width: 100%;
+    }
+}
+
+.sandwitch_exposed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    z-index: 99;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: calc($navbar-height / 2);
+    transform: translateY(-50%);
+    
+    .sandwitchItem {
+        transition: all 0.5s ease-in-out .2s;
+        border-radius: 50%;
+        width: 25px;
+        height: 2px;
+        background-color: white;
+    }
+    
+    .top {
+        transform: rotate(-45deg) translateY(10px);
+    }
+    
+    .bottom {
+        transform: rotate(45deg) translateY(-10px);
+    }
+    
+    .mid {
+        background-color: red;
+        transform: translate(20px);
+        margin: 5px 0;
+        opacity: 0;
+    }
+}
+
+.sandwitch_hidden {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    z-index: 99;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: calc($navbar-height / 2);
+    transform: translateY(-50%);
+    transition: all .2s ease-in-out;
+    
+    .sandwitchItem {
+        transition: all 0.5s ease-in-out .2s;
+        border-radius: 50%;
+        width: 25px;
+        height: 2px;
+        background-color: white;
+    }
+
+    .mid {
+        margin: 5px 0;
+    }
+}
+
+@media  screen and (min-width: 601px) {
+    .navbarMobile {
+        display: none;
+    }
+}

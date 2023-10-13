@@ -1,0 +1,8 @@
+@import '../../styles/Global.scss';
+
+.main {
+    background-color: $bg-main;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: $navbar-height;
+}

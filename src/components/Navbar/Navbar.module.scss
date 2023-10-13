@@ -1,0 +1,21 @@
+@import '../../styles/Global.scss';
+
+.header {
+    box-shadow: 0 10px 50px $bg-main;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height: $navbar-height;
+    padding: 10px;
+    background-color: $bg-main-transparent;
+    backdrop-filter: blur(15px);
+    z-index: 2;
+}
+
+@media  screen and (max-width: 600px) {
+    .header {
+        display: none;
+    }
+}
